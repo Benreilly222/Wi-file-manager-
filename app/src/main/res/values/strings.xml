@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">This PC</string>
+    <string name="drawer_this_pc" translatable="false">This PC</string>
+    <string name="thispc_folders" translatable="false">Folders</string>
+    <string name="thispc_drives" translatable="false">Devices and drives</string>
+    <string name="thispc_network" translatable="false">Network locations</string>
+</resources>
