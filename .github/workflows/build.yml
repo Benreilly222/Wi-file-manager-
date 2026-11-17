@@ -30,6 +30,9 @@ jobs:
         with:
           workspaces: native
 
+      - name: Make scripts executable
+        run: chmod +x native/*.sh gradlew
+
       - name: Install cargo-ndk
         run: cargo install cargo-ndk --locked
 
@@ -37,10 +40,10 @@ jobs:
         run: bash native/fetch-pdfium.sh
 
       - name: Build the native core
-        run: native/build.sh
+        run: bash native/build.sh
 
       - name: Build debug APK
-        run: chmod +x gradlew && ./gradlew --stacktrace :app:assembleDebug
+        run: ./gradlew --stacktrace :app:assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:

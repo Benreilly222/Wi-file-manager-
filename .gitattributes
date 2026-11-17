@@ -1,0 +1,6 @@
+# Keep Linux scripts with LF line endings (Windows CRLF breaks them on GitHub runners)
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
+*.so binary
